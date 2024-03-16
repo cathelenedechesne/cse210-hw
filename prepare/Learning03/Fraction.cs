@@ -8,7 +8,7 @@ public class Fraction
 
     public Fraction()
     {
-         // Default to 1/1
+        // Default to 1/1
         _top = 1;
         _bottom = 1;
     }
@@ -46,7 +46,7 @@ public class Fraction
         _bottom = bottom;
     }
 
-     public string GetFractionString()
+    public string GetFractionString()
     {
         string text = $"{_top}/{_bottom}";
         return text;
