@@ -19,7 +19,7 @@ class Program
         hiddenScriptures.Add(scripture2);
 
         // Main program loop
-        while (hiddenScriptures.Count > 0)
+        while (hiddenScriptures.Count > 0) // The loop continues until there are no more scriptures left to hide
         {
             // Get a random scripture from the list
             int index = new Random().Next(hiddenScriptures.Count);
