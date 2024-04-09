@@ -27,8 +27,10 @@ public class Order
         {
             total += product.GetTotalCost();
         }
+        // Add shipping cost based on customer's location
         return total + (_customer.IsInUSA() ? 5 : 35);
     }
+
 
     public string GetPackingLabel()
     {
@@ -40,10 +42,13 @@ public class Order
         return label;
     }
 
+
     public string GetShippingLabel()
     {
-        return $"Shipping Label:\n{_customer.GetAddressDetails()}";
+        return $"Shipping Label:\nCustomer Name: {_customer.GetName()}\n{_customer.GetAddressDetails()}";
     }
+
+
 
     public Customer GetCustomer()
     {
